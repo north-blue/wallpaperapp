@@ -33,6 +33,8 @@ public class WallpaperAdapter extends  RecyclerView.Adapter<WallpaperViewHolder>
         View view = LayoutInflater.from(context).inflate(R.layout.image_item,parent,false);
 
         return new WallpaperViewHolder(view);
+
+
     }
 
 

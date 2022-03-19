@@ -21,7 +21,6 @@
             android:name=".Wallpapemain"
             android:exported="false" />
         <activity
-
             android:name=".MainActivity"
             android:exported="true"
            >

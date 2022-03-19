@@ -37,6 +37,9 @@ public class FullScreenWallpaper extends AppCompatActivity {
 
         Glide.with(this).load(originalUrl).into(photoView);
 
+        //for the back
+       //super.onBackPressed();
+
 
     }
 
