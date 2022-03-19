@@ -3,7 +3,7 @@
 
  -An android application is using RESTful API. 
 
- -It shows trending wallpapers by default. It can also search for images.
+ -It shows trending wallpapers by default. It can also lets you search for images.
  
  -It lets you set the image as your wallpaper and download it to your gallery.
 
