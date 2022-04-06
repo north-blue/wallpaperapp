@@ -42,7 +42,7 @@ dependencies {
     //volly library we will our images with the help of that
     implementation 'com.android.volley:volley:1.2.1'
     implementation 'cn.bluemobi.dylan:photoview:1.4'
-    //implementation 'io.openharmony.tpc.thirdlib:PhotoView:3.0.0'
+    implementation 'io.openharmony.tpc.thirdlib:PhotoView:3.0.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
