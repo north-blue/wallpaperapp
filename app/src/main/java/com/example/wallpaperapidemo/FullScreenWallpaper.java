@@ -31,6 +31,8 @@ public class FullScreenWallpaper extends AppCompatActivity {
         setContentView(R.layout.activity_full_screen_wallpaper);
 
         getSupportActionBar().hide();
+
+
         Intent intent= getIntent();
         originalUrl = intent.getStringExtra("originalUrl");
         photoView = findViewById(R.id.photoView);

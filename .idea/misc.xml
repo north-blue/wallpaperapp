@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/diksh/AndroidStudioProjects/wallpaperapidemo2/app/src/main/res/drawable/button_shape.xml" value="0.224" />
         <entry key="..\:/Users/diksh/AndroidStudioProjects/wallpaperapidemo2/app/src/main/res/layout/activity_full_screen_wallpaper.xml" value="0.264" />
-        <entry key="..\:/Users/diksh/AndroidStudioProjects/wallpaperapidemo2/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
-        <entry key="..\:/Users/diksh/AndroidStudioProjects/wallpaperapidemo2/app/src/main/res/layout/activity_wallpapemain.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/diksh/AndroidStudioProjects/wallpaperapidemo2/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/diksh/AndroidStudioProjects/wallpaperapidemo2/app/src/main/res/layout/activity_wallpapemain.xml" value="0.264" />
         <entry key="..\:/Users/diksh/AndroidStudioProjects/wallpaperapidemo2/app/src/main/res/layout/image_item.xml" value="0.176" />
         <entry key="..\:/Users/diksh/AndroidStudioProjects/wallpaperapidemo2/app/src/main/res/menu/main.xml" value="0.36666666666666664" />
       </map>

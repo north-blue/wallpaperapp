@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "wallpaperapidemo"
+rootProject.name = "Pex WallPaper"
 include ':app'

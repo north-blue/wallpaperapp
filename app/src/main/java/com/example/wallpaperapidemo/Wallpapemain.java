@@ -3,6 +3,7 @@ package com.example.wallpaperapidemo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.AbsListView;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -52,6 +54,10 @@ public class Wallpapemain extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallpapemain);
+
+
+
+
 
         recyclerView =findViewById(R.id.recylerView);
         wallpapermodelList =new ArrayList<>();
@@ -146,12 +152,7 @@ public class Wallpapemain extends AppCompatActivity {
 
             }
         }){
-            /**
-             * Returns a list of extra HTTP headers to go along with this request. Can throw {@link
-             * AuthFailureError} as authentication may be required to provide these values.
-             *
-             * @throws AuthFailureError In the event of auth failure
-             */
+
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 //we have to do the authoriazation in key value pair so we using the map
