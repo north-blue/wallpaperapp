@@ -167,7 +167,7 @@ public class SpaceActivity extends AppCompatActivity {
             public Map<String, String> getHeaders() throws AuthFailureError {
 
                 Map<String,String> params= new HashMap<>();
-                params.put("Authorization","add api key for authorization");
+                params.put("Authorization","563492ad6f91700001000001aea2af4886b8453e813570733825eaeb");
                 return params;
             }
         };
