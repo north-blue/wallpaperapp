@@ -3,11 +3,13 @@ package com.example.wallpaperapidemo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,6 +26,12 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.wallpaperapidemo.view.DarkActivity;
+import com.example.wallpaperapidemo.view.ForestActivity;
+import com.example.wallpaperapidemo.view.MoonActivity;
+import com.example.wallpaperapidemo.view.NatureActivity;
+import com.example.wallpaperapidemo.view.SkyActivity;
+import com.example.wallpaperapidemo.view.SpaceActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -44,6 +52,10 @@ public class Wallpapemain extends AppCompatActivity {
 
     Boolean isScrolling=false;
     int currenItems,totalItems,scrollOutItems;
+
+
+
+    AppCompatButton nature,sky,space,dark,moon,forest;
     String url ="https://api.pexels.com/v1/curated/?page="+pageNumber+"&per_page=20";
 
 
@@ -60,9 +72,35 @@ public class Wallpapemain extends AppCompatActivity {
 
 
         recyclerView =findViewById(R.id.recylerView);
+        nature=findViewById(R.id.nature);
+        nature.setOnClickListener(this::onClick);
+
+        sky=findViewById(R.id.sky);
+        sky.setOnClickListener(this::onClick);
+
+        space=findViewById(R.id.space);
+        space.setOnClickListener(this::onClick);
+
+        forest=findViewById(R.id.forest);
+        forest.setOnClickListener(this::onClick);
+
+        moon=findViewById(R.id.moon);
+        moon.setOnClickListener(this::onClick);
+
+        dark=findViewById(R.id.dark);
+        dark.setOnClickListener(this::onClick);
+
+
+
+
+
+
+
+
+
+
         wallpapermodelList =new ArrayList<>();
         wallpaperAdapter =new WallpaperAdapter(this, wallpapermodelList);
-
         //set the adapter to the recyclerview
 
         recyclerView.setAdapter(wallpaperAdapter);
@@ -102,6 +140,53 @@ public class Wallpapemain extends AppCompatActivity {
         //finish();
 
     }
+
+
+
+    public void onClick(View v){
+        switch (v.getId()) {
+            case R.id.nature:
+                Intent intent = new Intent(this, NatureActivity.class);
+                this.startActivity(intent);
+                break;
+
+            case R.id.dark:
+
+                Intent intent_ent = new Intent(this, DarkActivity.class);
+                this.startActivity(intent_ent);
+                break;
+
+            case R.id.moon:
+                Intent intent_one = new Intent(this, MoonActivity.class);
+                this.startActivity(intent_one);
+                break;
+
+
+            case R.id.space:
+                Intent intent_two = new Intent(this, SpaceActivity.class);
+                this.startActivity(intent_two);
+                break;
+            case R.id.sky:
+
+                Intent intent_three = new Intent(this, SkyActivity.class);
+                this.startActivity(intent_three);
+                break;
+            case R.id.forest:
+                Intent intent_four = new Intent(this, ForestActivity.class);
+                this.startActivity(intent_four);
+                break;
+
+        }
+
+
+    }
+
+
+
+
+
+
+
 
     public void fetchWallpaper(){
         //after curated give the slash and write data about page too +page number + for the page next pages
@@ -157,7 +242,7 @@ public class Wallpapemain extends AppCompatActivity {
             public Map<String, String> getHeaders() throws AuthFailureError {
                 //we have to do the authoriazation in key value pair so we using the map
                 Map<String,String> params= new HashMap<>();
-                params.put("Authorization","563492ad6f91700001000001aea2af4886b8453e813570733825eaeb");
+                params.put("Authorization","add your api key");  //add api key for authorization
                 return params;
             }
         };
