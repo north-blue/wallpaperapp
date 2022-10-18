@@ -8,15 +8,106 @@
     tools:context=".Wallpapemain">
 
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <HorizontalScrollView
+
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
 
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
 
+            <LinearLayout
+                android:id="@+id/linearHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/nature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:background="@drawable/border_round_shaper"
+                    android:text="Nature" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/border_round_shaper"
+                    android:padding="5dp"
+
+                    android:text="Dark" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/moon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/border_round_shaper"
+
+                    android:text="Moon" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/border_round_shaper"
+
+                    android:text="Sky" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/forest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/border_round_shaper"
+
+                    android:text="Forest" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/border_round_shaper"
+                    android:padding="5dp"
+
+                    android:text="space" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
 
-        android:id="@+id/recylerView"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="96dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,6 @@
     package="com.example.wallpaperapidemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
     <application
@@ -14,7 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Wallpaperapidemo">
         <activity
-
+            android:name=".view.SpaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ForestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SkyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.MoonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.DarkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.NatureActivity"
+            android:exported="false" />
+        <activity
             android:name=".FullScreenWallpaper"
             android:exported="false" />
         <activity
@@ -22,8 +38,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-           >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
